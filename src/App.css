@@ -1,3 +1,7 @@
+:root {
+  --cells-color: #f3df7a;
+}
+
 .App {
   display: flex;
   width: 90vh;
@@ -26,6 +30,90 @@
 }
 
 .App-Main {
-  width: 75vh;
+  width: 70vh;
   height: 75vh;
+  /* border: 1px solid red; */
+}
+
+.Player-Turn {
+  padding: 0;
+  margin: 0;
+  height: 4vh;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+}
+
+.Tablero {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  background-color: #0035667c;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+#div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: var(--cells-color);
+}
+
+#div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: var(--cells-color);
+}
+
+#div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: var(--cells-color);
+}
+
+#div4 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: var(--cells-color);
+}
+
+#div5 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: var(--cells-color);
+}
+
+#div6 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: var(--cells-color);
+}
+
+#div7 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: var(--cells-color);
+}
+
+#div8 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: var(--cells-color);
+}
+
+#div9 {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: var(--cells-color);
+}
+
+.Circulo {
+  background-image: url("../public/assets/img/icons/circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.Cruz {
+  background-image: url("../public/assets/img/icons/cruz.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.Error {
+  background-color: red !important;
 }

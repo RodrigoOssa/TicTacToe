@@ -1,4 +1,5 @@
 import './App.css';
+import Tictactoe from './components/Tictactoe';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         Tic Tac Toe
       </header>
       <main className='App-Main'>
-
+        <Tictactoe></Tictactoe>
       </main>
     </div>
   );
