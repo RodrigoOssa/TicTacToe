@@ -35,6 +35,14 @@
   /* border: 1px solid red; */
 }
 
+.Player-Display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
 .Player-Turn {
   padding: 0;
   margin: 0;
@@ -42,6 +50,23 @@
   margin-top: 5px;
   color: white;
   text-align: center;
+  display: contents;
+}
+
+.Player-Img {
+  height: 4vh;
+  display: block;
+  background-color: #f3df7a;
+  display: contents;
+}
+
+.Player-Img img {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 4vh;
+  background-color: #6d6d6d2d;
+  margin-left: 11px;
 }
 
 .Tablero {
@@ -116,4 +141,43 @@
 
 .Error {
   background-color: red !important;
+}
+
+.Cuadro-Ganador {
+  width: 80vw;
+  height: 70vh;
+  position: fixed;
+  background-color: #fada7a;
+  border: 1vh solid #f7ce02;
+  border-radius: 25px;
+  margin-left: -19vw;
+}
+
+.Ganador {
+  width: 100%;
+  height: 45%;
+  text-align: center;
+  font-size: 9vw;
+  padding-top: 5%;
+}
+
+.Reiniciar {
+  height: 40%;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.Reiniciar:hover {
+  background-color: #f7c73948;
+  cursor: pointer;
+}
+
+.Reiniciar:active {
+  border: 1px solid red;
 }
