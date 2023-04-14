@@ -150,7 +150,9 @@
   background-color: #fada7a;
   border: 1vh solid #f7ce02;
   border-radius: 25px;
-  margin-left: -19vw;
+  margin-left: 0px;
+  align-self: normal;
+  justify-self: center;
 }
 
 .Ganador {

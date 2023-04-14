@@ -17,7 +17,7 @@ const Tablero = ({ turn, playerTurn }) => {
     const [mesa, setMesa] = useState(tablero);
     const [playerTwo, setPlayerTwo] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0]);
     const [playerOne, setPlayerOne] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0]);
-    const [cuadroGanador, setCuadroGanador] = useState({ "display": "inline" });
+    const [cuadroGanador, setCuadroGanador] = useState({ "display": "none" });
     const [finJuego, setFinJuego] = useState(0);
 
     const verificarVacio = (casilla) => {
@@ -183,7 +183,7 @@ const Tablero = ({ turn, playerTurn }) => {
 
     return (
         <div className="Tablero">
-            <div className="Cuadro-Ganador" style={cuadroGanador}>
+            <div className="Cuadro-Ganador animate__bounceIn" style={cuadroGanador}>
                 <div className="Ganador">{`Ganador Player ${finJuego}`}</div>
                 <div className="Reiniciar" onClick={() => reiniciar()}>
                     <p>Reiniciar</p>

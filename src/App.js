@@ -1,4 +1,5 @@
 import './App.css';
+import "animate.css";
 import Tictactoe from './components/Tictactoe';
 
 function App() {
